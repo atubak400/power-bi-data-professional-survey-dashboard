@@ -12,10 +12,10 @@ The project demonstrates end-to-end data analyst skills, including data cleaning
 
 The objective of this project is to provide an interactive dashboard that helps stakeholders:
 
-- Understand salary trends across different data roles  
-- Identify the most commonly used programming languages among data professionals  
-- Compare survey responses by country and industry  
-- Gain insight into job satisfaction levels within the data profession  
+- Understand salary trends across different data roles
+- Identify the most commonly used programming languages among data professionals
+- Compare survey responses by country and industry
+- Gain insight into job satisfaction levels within the data profession
 
 The dashboard supports data-driven decision-making by presenting complex survey data in a clear and accessible format.
 
@@ -27,7 +27,7 @@ The dataset is a real-world survey of data professionals collected in Excel form
 
 **Data source:** Public survey of data professionals conducted by Alex The Analyst and shared via LinkedIn and Twitter  
 **Format:** Excel (`.xlsx`)  
-**Granularity:** One row per survey respondent  
+**Granularity:** One row per survey respondent
 
 ---
 
@@ -39,13 +39,13 @@ Data cleaning and transformation were then performed in Power Query within Power
 
 Key steps included:
 
-- Removing unnecessary columns (Browser, OS (Operating System), Referrer, and Email) that contained technical metadata rather than analytical insight, reducing dataset complexity and improving model clarity.  
-- Standardising job titles by removing free-text descriptions from entries such as “Other (please specify…)” to create consistent role categories.  
-- Standardising favourite programming language values by removing free-text inputs and consolidating categories for accurate popularity comparisons.  
-- Cleaning and standardising country and industry fields by removing free-text responses and retaining only structured category values.  
-- Converting salary ranges into a numeric **Average Salary** column to enable meaningful salary analysis and comparison.  
-- Resolving date parsing errors by correcting locale-specific date formatting so that date fields could be interpreted correctly.  
-- Ensuring derived fields, including **Average Salary**, were stored using appropriate numeric data types to support accurate aggregation and visualisation.  
+- Removing unnecessary columns (Browser, OS (Operating System), Referrer, and Email) that contained technical metadata rather than analytical insight, reducing dataset complexity and improving model clarity.
+- Standardising job titles by removing free-text descriptions from entries such as “Other (please specify…)” to create consistent role categories.
+- Standardising favourite programming language values by removing free-text inputs and consolidating categories for accurate popularity comparisons.
+- Cleaning and standardising country and industry fields by removing free-text responses and retaining only structured category values.
+- Converting salary ranges into a numeric **Average Salary** column to enable meaningful salary analysis and comparison.
+- Resolving date parsing errors by correcting locale-specific date formatting so that date fields could be interpreted correctly.
+- Ensuring derived fields, including **Average Salary**, were stored using appropriate numeric data types to support accurate aggregation and visualisation.
 
 Detailed data cleaning decisions, assumptions, and transformation logic are documented in `notes/data_cleaning.md`.
 
@@ -67,12 +67,12 @@ The design begins with headline KPI cards to establish dataset context, followed
 
 Key visual components include:
 
-- **KPI cards** showing the total number of survey respondents and the average age of respondents to provide immediate demographic context.  
-- A **bar chart** comparing average salary by job title, enabling clear comparison of compensation across data roles.  
-- A **stacked column chart** showing favourite programming languages by job role, highlighting both overall popularity and role-based variation.  
-- A **treemap** displaying the geographic distribution of respondents by country, allowing quick comparison of relative participation levels.  
-- **Gauge charts** summarising satisfaction with work-life balance and salary, providing intuitive sentiment indicators on a fixed scale.  
-- A **donut chart** illustrating perceived difficulty of breaking into the data profession, capturing respondent sentiment around entry barriers.  
+- **KPI cards** showing the total number of survey respondents and the average age of respondents to provide immediate demographic context.
+- A **bar chart** comparing average salary by job title, enabling clear comparison of compensation across data roles.
+- A **stacked column chart** showing favourite programming languages by job role, highlighting both overall popularity and role-based variation.
+- A **treemap** displaying the geographic distribution of respondents by country, allowing quick comparison of relative participation levels.
+- **Gauge charts** summarising satisfaction with work-life balance and salary, providing intuitive sentiment indicators on a fixed scale.
+- A **donut chart** illustrating perceived difficulty of breaking into the data profession, capturing respondent sentiment around entry barriers.
 
 Detailed visual-level design decisions, field selections, and insights are documented in `notes/visualisation_design.md`.
 
@@ -88,18 +88,18 @@ The Power BI dashboard is fully interactive and designed to support exploratory 
 
 <!-- ### Additional Pages
 
-![Page 1](images/page_1.png)  
+![Page 1](images/page_1.png)
 ![Page 2](images/page_2.png) -->
 
 ---
 
 ## Key Insights
 
-- Average salaries vary significantly across different data roles, with senior roles earning notably higher salaries.  
-- Python is the dominant programming language across data roles, with consistent usage among analysts, scientists, and engineers.  
-- Survey respondents are geographically diverse, with the largest representation from the United States, followed by India, Canada, and the United Kingdom.  
-- Respondents report moderate satisfaction with work-life balance but lower satisfaction with salary.  
-- Breaking into the data profession is commonly perceived as moderately difficult rather than easy.  
+- Average salaries vary significantly across different data roles, with senior roles earning notably higher salaries.
+- Python is the dominant programming language across data roles, with consistent usage among analysts, scientists, and engineers.
+- Survey respondents are geographically diverse, with the largest representation from the United States, followed by India, Canada, and the United Kingdom.
+- Respondents report moderate satisfaction with work-life balance but lower satisfaction with salary.
+- Breaking into the data profession is commonly perceived as moderately difficult rather than easy.
 
 These insights demonstrate how survey data can be converted into actionable information.
 
@@ -107,27 +107,27 @@ These insights demonstrate how survey data can be converted into actionable info
 
 ## Tools and Technologies Used
 
-- Power BI  
-- Power Query  
-- DAX  
-- Microsoft Excel  
+- Power BI
+- Power Query
+- DAX
+- Microsoft Excel
 
 ---
 
 ## How to Use the Dashboard
 
-- Use slicers to filter results by country, role, or industry  
-- Interact with charts to highlight specific categories  
-- Navigate between pages to explore different aspects of the survey  
+- Use slicers to filter results by country, role, or industry
+- Interact with charts to highlight specific categories
+- Navigate between pages to explore different aspects of the survey
 
 ---
 
 ## Future Improvements
 
-- Add more advanced DAX calculations for deeper analysis  
-- Enhance dashboard design and accessibility  
-- Publish the report to Power BI Service for online access  
-- Incorporate additional survey data for trend analysis over time  
+- Add more advanced DAX calculations for deeper analysis
+- Enhance dashboard design and accessibility
+- Publish the report to Power BI Service for online access
+- Incorporate additional survey data for trend analysis over time
 
 ---
 
@@ -135,4 +135,5 @@ These insights demonstrate how survey data can be converted into actionable info
 
 **Kingsley Atuba**  
 Data Analyst | Power BI | SQL | Excel
+
 # power-bi-data-professional-survey-dashboard
